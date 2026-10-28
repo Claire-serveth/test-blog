@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Short summary of the blog post for search engines and social previews." />
+		<meta name="author" content="Serv.eth" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Post title — Serv.eth Blog" />
+		<meta property="og:description" content="Short summary of the blog post for search engines and social previews." />
+		<meta property="og:image" content="https://serveth.support/img/serveth-gradient-square-transparent-small.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<link rel="icon" href="../img/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="stylesheet" href="blog.css" />
+
+		<title>Post title — Serv.eth Blog</title>
+	</head>
+	<body>
+		<!--
+			Blog post template: duplicate this file, rename it (e.g. my-post.html),
+			then replace the title, meta tags, date, author and article content.
+		-->
+		<header class="blog-hero">
+				<nav class="nav" aria-label="Primary navigation">
+					<a href="../" aria-label="Serv.eth home">
+						<img class="nav-logo" src="../img/logo.svg" alt="Serv.eth" />
+					</a>
+					<div class="nav-links">
+						<a class="nav-link" href="../#service">Our service</a>
+						<a class="nav-link" href="../#about">About us</a>
+						<a class="nav-link" href="../#testimonials">Testimonials</a>
+						<a class="nav-link" href="../#pricing">Pricing</a>
+						<a class="nav-link is-active" href="./" aria-current="page">Blog</a>
+					</div>
+					<a class="outline-button" href="../#contact">
+						Let’s talk
+						<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+					</a>
+				</nav>
+			<div class="blog-hero-inner article-header">
+				<a class="back-link" href="./">
+					<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" /></svg>
+					Back to blog
+				</a>
+				<p class="post-meta"><span class="post-category">Category</span><span>·</span><time datetime="2026-10-12">Oct 12, 2026</time><span>·</span><span>6 min read</span></p>
+				<h1 class="hero-title">Post title goes here, <strong>with a highlight.</strong></h1>
+				<p class="hero-sub">A one or two sentence summary that introduces the article.</p>
+				<div class="author">
+					<span class="author-avatar" aria-hidden="true">SE</span>
+					<div>
+						<p>Author Name</p>
+						<p class="author-role">Role, Serv.eth</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<article class="article">
+				<p>Opening paragraph. Set the scene and tell readers what they will learn. Keep it short and direct.</p>
+				<h2>Section heading</h2>
+				<p>Body text with an <a href="#">inline link</a> and some <code>inline code</code>. Paragraphs are comfortably spaced for long-form reading.</p>
+				<ul>
+					<li>A list item explaining a key point</li>
+					<li>Another supporting detail</li>
+					<li>A final takeaway</li>
+				</ul>
+				<blockquote>“A pull quote that highlights a memorable line from the article.”</blockquote>
+				<h3>Sub-section heading</h3>
+				<p>More detail goes here. Use code blocks for technical examples:</p>
+				<pre><code>const tx = await wallet.sendTransaction({ to, value });</code></pre>
+				<figure>
+					<div class="post-cover">
+						<img src="../img/main-image.svg" alt="Describe the image" loading="lazy" />
+					</div>
+					<figcaption>An optional image caption.</figcaption>
+				</figure>
+				<h2>Conclusion</h2>
+				<p>Wrap up the main ideas and point readers to a next step.</p>
+			</article>
+
+			<div class="article-footer">
+				<div class="article-tags">
+					<a class="blog-tag" href="./">Tag one</a>
+					<a class="blog-tag" href="./">Tag two</a>
+				</div>
+				<aside class="article-cta">
+					<h2>Need 24/7 support for your community?</h2>
+					<p>Our team joins your Discord and answers user questions around the clock.</p>
+					<a class="primary-button" href="../#contact">
+						Let’s talk
+						<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+					</a>
+				</aside>
+			</div>
+
+			<section class="related" aria-labelledby="related-title">
+				<h2 id="related-title" class="section-title">Keep reading</h2>
+				<div class="post-grid">
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/main-image.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Wallets</span><span>·</span><time datetime="2026-10-01">Oct 1, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Stuck transactions: a support playbook</a></h3>
+							<p class="post-excerpt">How we walk users through pending transactions, nonce issues and gas selection.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/about-image.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Community</span><span>·</span><time datetime="2026-09-18">Sep 18, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Writing escalations your devs will love</a></h3>
+							<p class="post-excerpt">The context we collect before handing an issue to your engineering team.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/pricing-img.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Company</span><span>·</span><time datetime="2026-09-02">Sep 2, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Paying for support in crypto</a></h3>
+							<p class="post-excerpt">Why we accept crypto payments and how startup-friendly pricing works.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<img src="../img/logo.svg" alt="Serv.eth" />
+			<p>Ethereum support, around the clock.</p>
+		</footer>
+	</body>
+</html>

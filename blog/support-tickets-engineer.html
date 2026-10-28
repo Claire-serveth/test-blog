@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Most pings to your engineering team did not need one. How we investigate a ticket first, and what a finished escalation looks like when it really is a bug." />
+		<meta name="author" content="Serv.eth" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="How many support tickets need an engineer? — Serv.eth Blog" />
+		<meta property="og:description" content="Most pings to your engineering team did not need one. How we investigate a ticket first, and what a finished escalation looks like when it really is a bug." />
+		<meta property="og:image" content="https://serveth.support/img/web3-support-graphic.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<link rel="icon" href="../img/favicon.png" type="image/png">
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="stylesheet" href="blog.css" />
+
+		<title>How many support tickets need an engineer? — Serv.eth Blog</title>
+	</head>
+	<body>
+		<header class="blog-hero">
+			<nav class="nav" aria-label="Primary navigation">
+				<a href="../" aria-label="Serv.eth home">
+					<img class="nav-logo" src="../img/logo.svg" alt="Serv.eth" />
+				</a>
+				<div class="nav-links">
+					<a class="nav-link" href="../#service">Our service</a>
+					<a class="nav-link" href="../#about">About us</a>
+					<a class="nav-link" href="../#testimonials">Testimonials</a>
+					<a class="nav-link" href="../#pricing">Pricing</a>
+					<a class="nav-link is-active" href="./" aria-current="page">Blog</a>
+				</div>
+				<a class="outline-button" href="../#contact">
+					Let’s talk
+					<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+				</a>
+			</nav>
+			<div class="blog-hero-inner article-header">
+				<a class="back-link" href="./">
+					<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" /></svg>
+					Back to blog
+				</a>
+				<p class="post-meta"><span class="post-category">Support</span><span>·</span><time datetime="2026-10-22">Oct 22, 2026</time><span>·</span><span>4 min read</span></p>
+				<h1 class="hero-title">How many support tickets <strong>need an engineer?</strong></h1>
+				<p class="hero-sub">Most pings to your engineering team did not need one. Here is how we investigate a ticket first, and what a finished escalation looks like when it really is a bug.</p>
+				<div class="author">
+					<span class="author-avatar" aria-hidden="true">CNY</span>
+					<div>
+						<p>Cindy</p>
+						<p class="author-role">Technical Support, Serv.eth</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<article class="article">
+				<figure>
+					<img class="cover-photo" src="../img/blog/web3-support-graphic.svg" alt="A queue of glowing support tickets rising towards a lone engineer holding a wrench, over a purple blockchain backdrop" width="1200" height="630" />
+				</figure>
+
+				<p>Open a protocol’s Discord during launch week and you will see the same scene play out again and again. A user posts a screenshot and a one-line complaint. Someone tags a core contributor. Twenty minutes later an engineer is reading a transaction hash instead of shipping.</p>
+				<p>This costs more than it looks like it does. Each ping takes the time to answer the ticket, plus the time it takes to get back into whatever the engineer was doing before. Most of those pings did not need an engineer at all.</p>
+
+				<h2>What your support tickets are really about</h2>
+				<p>Most support queues sort into the same few categories. The percentages vary by protocol, but in nearly every queue, user setup and understanding issues far outnumber real bugs.</p>
+				<figure>
+					<div class="stat-chart" role="img" aria-label="Bar chart showing where a typical DeFi support queue comes from: wallet and setup 34%, network and approvals 22%, pending or failed transactions 21%, interface and docs confusion 15%, real product bugs 8%">
+						<div class="stat-row">
+							<span class="stat-label"><span>Wallet and setup</span><span>34%</span></span>
+							<span class="stat-bar"><span class="stat-bar-fill" style="width: 68%;"></span></span>
+						</div>
+						<div class="stat-row">
+							<span class="stat-label"><span>Network and approvals</span><span>22%</span></span>
+							<span class="stat-bar"><span class="stat-bar-fill" style="width: 44%;"></span></span>
+						</div>
+						<div class="stat-row">
+							<span class="stat-label"><span>Pending or failed transactions</span><span>21%</span></span>
+							<span class="stat-bar"><span class="stat-bar-fill" style="width: 42%;"></span></span>
+						</div>
+						<div class="stat-row">
+							<span class="stat-label"><span>Interface and docs confusion</span><span>15%</span></span>
+							<span class="stat-bar"><span class="stat-bar-fill" style="width: 30%;"></span></span>
+						</div>
+						<div class="stat-row is-bug">
+							<span class="stat-label"><span>Real product bugs</span><span>8%</span></span>
+							<span class="stat-bar"><span class="stat-bar-fill" style="width: 16%;"></span></span>
+						</div>
+					</div>
+					<figcaption>Where a typical DeFi support queue comes from. Illustrative split, shown to scale — replace these numbers with your own before publishing.</figcaption>
+				</figure>
+				<p>Two of those buckets get mistaken for bugs more than any other: pending transactions and confusing interfaces. They look like bugs because the user cannot see what is happening. A support team’s job is to make it visible.</p>
+
+				<h2>How we investigate a ticket before escalating it</h2>
+				<p>Many tickets look like bugs on first read. A user says their funds are gone, or a transaction has been stuck for hours, and the obvious move is to ask an engineer. A good support team checks the facts first. This is the order we work in:</p>
+				<ol>
+					<li>Ask for two things only, the transaction hash and the wallet address. Long questionnaires make users give up.</li>
+					<li>Open the hash in the block explorer and read the status. A failed transaction shows a revert reason. A pending one points to a gas or nonce problem.</li>
+					<li>Read the event logs to see what the contract actually did, such as which tokens moved and in what amount.</li>
+					<li>Check the protocol’s public API for the backend state of the position or order, and compare it with what the chain shows.</li>
+					<li>Compare all of that with what the user sees. Display issues, missing token imports and the wrong network explain a large share of reports.</li>
+					<li>Decide. Either explain the cause and close the ticket, or escalate with the evidence attached.</li>
+				</ol>
+				<blockquote>Most tickets end at step 6 with an explanation, and no developer is pinged. The user also learns what happened, which stops the same ticket from coming back next week.</blockquote>
+
+				<h2>When it is a bug, hand over a finished file</h2>
+				<p>Some tickets are real, and the handoff is where a support team earns its place. An engineer should be able to read the message once and start working. This is the shape we use:</p>
+				<pre><code>Summary      [one line describing the problem]
+Network      [chain name]
+Transaction  [transaction hash]
+Wallet       [wallet address]
+Expected     [what should have happened]
+Observed     [what happened instead]
+Ruled out    [what we already checked]
+Reproduced   [steps taken and how often it happens]
+Affected     [number of users reporting it]
+Links        Explorer, screenshots, ticket thread</code></pre>
+				<p>The <strong>Ruled out</strong> line does the most work. It tells the engineer which theories are already dead, so they start where the investigation ended instead of where it began.</p>
+
+				<h2>What this means for your team</h2>
+				<p>A support team that sends fewer false alarms to engineering saves hours. It also tends to catch real problems sooner, because the person answering tickets has seen three similar reports and connects them before anyone files a formal bug.</p>
+				<p>The way we work is simple. We take the front line. We investigate before we escalate. When something does reach your developers, it comes with evidence attached.</p>
+			</article>
+
+			<div class="article-footer">
+				<div class="article-tags">
+					<a class="blog-tag" href="./">Support</a>
+					<a class="blog-tag" href="./">Escalations</a>
+				</div>
+				<aside class="article-cta">
+					<h2>Want a support team that investigates first?</h2>
+					<p>Tell us about your queue and where it hurts. We will tell you what we would take off your team’s plate.</p>
+					<a class="primary-button" href="../#contact">
+						Let’s talk
+						<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+					</a>
+				</aside>
+			</div>
+
+			<section class="related" aria-labelledby="related-title">
+				<h2 id="related-title" class="section-title">Keep reading</h2>
+				<div class="post-grid">
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/main-image.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Wallets</span><span>·</span><time datetime="2026-10-01">Oct 1, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Stuck transactions: a support playbook</a></h3>
+							<p class="post-excerpt">How we walk users through pending transactions, nonce issues and gas selection.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/about-image.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Community</span><span>·</span><time datetime="2026-09-18">Sep 18, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Writing escalations your devs will love</a></h3>
+							<p class="post-excerpt">The context we collect before handing an issue to your engineering team.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+					<article class="post-card">
+						<a class="post-cover" href="post.html" tabindex="-1" aria-hidden="true">
+							<img src="../img/pricing-img.svg" alt="" loading="lazy" />
+						</a>
+						<div class="post-card-body">
+							<p class="post-meta"><span class="post-category">Company</span><span>·</span><time datetime="2026-09-02">Sep 2, 2026</time></p>
+							<h3 class="post-title"><a href="post.html">Paying for support in crypto</a></h3>
+							<p class="post-excerpt">Why we accept crypto payments and how startup-friendly pricing works.</p>
+							<a class="read-more" href="post.html">
+								Read article
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<img src="../img/logo.svg" alt="Serv.eth" />
+			<p>Ethereum support, around the clock.</p>
+		</footer>
+	</body>
+</html>
