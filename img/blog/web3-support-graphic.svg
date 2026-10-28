@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Web3 support tickets filtered before they reach engineering</title>
+  <desc id="d">Many support tickets enter a funnel with a magnifying glass. One ticket leaves, escalated with evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d357f"/>
+      <stop offset="1" stop-color="#081a45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3f7df0" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3f7df0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.09"/>
+    </pattern>
+    <g id="ticket">
+      <rect width="58" height="38" rx="7" fill="#ffffff"/>
+      <rect x="9" y="10" width="26" height="5" rx="2.5" fill="#9dbbef"/>
+      <rect x="9" y="21" width="40" height="5" rx="2.5" fill="#cfdcf5"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="600" cy="285" r="340" fill="url(#glow)"/>
+
+  <!-- Graphic, centered -->
+  <g transform="translate(-300 8)">
+    <!-- Tickets entering -->
+    <g>
+      <use href="#ticket" transform="translate(690 58) rotate(-12)"/>
+      <use href="#ticket" transform="translate(768 40) rotate(8)"/>
+      <use href="#ticket" transform="translate(846 64) rotate(-6)"/>
+      <use href="#ticket" transform="translate(924 36) rotate(10)"/>
+      <use href="#ticket" transform="translate(1000 62) rotate(-9)"/>
+      <use href="#ticket" transform="translate(1068 38) rotate(7)"/>
+      <use href="#ticket" transform="translate(730 96) rotate(5)" opacity="0.9"/>
+      <use href="#ticket" transform="translate(960 92) rotate(-4)" opacity="0.9"/>
+    </g>
+
+    <!-- Funnel -->
+    <polygon points="690,138 1110,138 932,368 932,430 868,430 868,368" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-linejoin="round"/>
+    <use href="#ticket" transform="translate(770 158) rotate(-8)" opacity="0.75"/>
+    <use href="#ticket" transform="translate(900 168) rotate(6)" opacity="0.75"/>
+    <use href="#ticket" transform="translate(985 152) rotate(-5)" opacity="0.75"/>
+
+    <!-- Magnifying glass -->
+    <g transform="translate(0 20)">
+      <circle cx="896" cy="250" r="34" fill="#0b2a6b" fill-opacity="0.55" stroke="#ffffff" stroke-width="8"/>
+      <line x1="921" y1="275" x2="948" y2="302" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+    </g>
+    <text x="900" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1" fill="#ffffff" fill-opacity="0.9">INVESTIGATED</text>
+
+    <!-- Output -->
+    <path d="M900 430 L900 458" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="890,452 910,452 900,468" fill="#ffffff" fill-opacity="0.8"/>
+    <rect x="760" y="478" width="280" height="76" rx="14" fill="#4d8dff"/>
+    <circle cx="804" cy="516" r="17" fill="#ffffff"/>
+    <path d="M795 516 L802 523 L814 508" fill="none" stroke="#0b2a6b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="834" y="522" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Escalated with evidence</text>
+  </g>
+</svg>
