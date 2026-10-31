@@ -134,6 +134,21 @@
 .author-avatar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--accent-foreground); font-weight: 700; }
 .author-role { color: var(--hero-muted); font-size: 0.8rem; }
 
+/* Wide cover photo inside the article header */
+.article-header .hero-cover {
+	margin: 2.5rem 0 0;
+	border-radius: 1.25rem;
+	overflow: hidden;
+	box-shadow: 0 24px 48px -24px color-mix(in oklch, oklch(0.48 0.22 305) 45%, transparent);
+}
+.article-header .hero-cover img { display: block; width: 100%; height: auto; }
+
+/* Mid-article call to action */
+.article .article-cta-mid { margin-top: 3rem; }
+.article .article-cta-mid h2 { color: var(--hero-foreground); }
+.article .article-cta-mid p { color: var(--hero-muted); }
+.article .article-cta-mid .primary-button { color: var(--accent-foreground); text-decoration: none; }
+
 .article {
 	margin: 0 auto;
 	max-width: 46rem;
