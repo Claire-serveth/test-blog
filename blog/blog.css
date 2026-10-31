@@ -143,7 +143,7 @@
 }
 .article > * + * { margin-top: 1.5rem; }
 .article h2 { margin-top: 3rem; font-size: 1.75rem; font-weight: 600; line-height: 1.25; color: var(--strong); }
-.article h3 { margin-top: 2.25rem; font-size: 1.3rem; font-weight: 600; color: var(--strong); }
+.article h3 { margin-top: 2.25rem; font-size: 1.3rem; font-weight: 600; border-left: 4px solid oklch(0.5 0.2 285); color: var(--strong); }
 .article a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .article ul,
 .article ul { list-style: disc; }
