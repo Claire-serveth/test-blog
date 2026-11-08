@@ -106,24 +106,6 @@
 	color: var(--primary);
 }
 
-.pagination {
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
-	margin-top: 3.5rem;
-}
-.pagination a {
-	display: grid;
-	place-items: center;
-	min-width: 44px;
-	min-height: 44px;
-	border: 1px solid var(--border);
-	border-radius: 999px;
-	font-size: 0.875rem;
-	font-weight: 600;
-}
-.pagination a[aria-current="page"] { background: var(--strong); color: var(--strong-foreground); border-color: var(--strong); }
-
 /* Single post */
 .article-header { max-width: 46rem; }
 .article-header .post-meta { color: var(--hero-muted); margin-bottom: 1.25rem; }
