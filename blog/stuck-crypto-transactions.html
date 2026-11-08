@@ -121,9 +121,12 @@
 				<ol>
 					<li><strong>Look up the transaction hash.</strong></li> 
 						<p>We check the explorer ourselves first, so the user never has to interpret a block explorer on their own.</p>
-					<li><strong>Classify the state.</strong> Pending, dropped, or replaced. Each has a different fix, and telling the user which one it is removes the guesswork.</li>
-					<li><strong>Speed it up or cancel it.</strong> We walk the user through a same-nonce replacement transaction with higher gas, or a zero-value cancellation, one wallet screen at a time.</li>
-					<li><strong>Confirm the outcome.</strong> We stay with the user until the transaction confirms (or the replacement clears) and they can see it themselves in the explorer.</li>
+					<li><strong>Classify the state.</strong></li>
+						<p>Pending, dropped, or replaced. Each has a different fix, and telling the user which one it is removes the guesswork.</p>
+					<li><strong>Speed it up or cancel it.</strong></li> 
+						<p>We walk the user through a same-nonce replacement transaction with higher gas, or a zero-value cancellation, one wallet screen at a time.</p>
+					<li><strong>Confirm the outcome.</strong></li> 
+						<p>We stay with the user until the transaction confirms (or the replacement clears) and they can see it themselves in the explorer.</p>
 				</ol>
 
 				<h2>Nonce issues, in plain language</h2>
