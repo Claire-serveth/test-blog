@@ -143,6 +143,7 @@
 	max-width: 46rem;
 	padding: 0 1.25rem 5rem;
 }
+.article-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; padding-top: 2rem; border-top: 1px solid var(--border); }
 .article-cta {
 	margin-top: 3rem;
 	padding: 2rem;
