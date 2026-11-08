@@ -139,7 +139,7 @@
 .article figcaption { margin-top: 0.75rem; font-size: 0.85rem; text-align: center; color: var(--muted-foreground); }
 
 .article-footer {
-	margin: 3rem auto 0;
+	margin: 1.5rem auto 0;
 	max-width: 46rem;
 	padding: 0 1.25rem 5rem;
 }
