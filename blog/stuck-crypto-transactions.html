@@ -74,14 +74,14 @@
 				</ul>
 				<p>Start there.</p>
 
-				<h2>Why Crypto Transactions Get Stuck</h2>
+				<h2>Why crypto transactions get stuck</h2>
 				<p>A transaction is very rarely going to get stuck because something is actually broken. More often than not, it’s due to network conditions, wallet settings, or transaction sequencing. Understanding the most common causes goes a long way toward helping the support team diagnose the issue more quickly and provide better guidance.</p>
 
-				<h3>1. Network Congestion</h3>
+				<h3>1. Network congestion</h3>
 				<p>When there’s a spike in blockchain activity, the network can get very congested. Validators will generally be prioritizing the transactions that are offering the highest fees. During periods of high activity, you can find lower-fee transactions sitting around for a lot longer than you’d normally expect.</p>
 				<p>From the user’s point of view, it’s slow. In reality, the transaction is just queuing up.</p>
 
-				<h3>2. Gas Fees Set Too Low</h3>
+				<h3>2. Gas fees set too low</h3>
 				<p>One of the most frequent reasons for a transaction getting stuck is simply not enough gas. A transaction that’s submitted with a fee too low for the current level of network demand will remain pending until network activity subsides.</p>
 				<p>Users often see:</p>
 				<ul>
@@ -93,13 +93,13 @@
 				<p>Your transaction is still waiting to be processed because network fees rose after you submitted it.</p>
 				<p>Simple explanations build confidence.</p>
 
-				<h3>3. Nonce Conflicts</h3>
+				<h3>3. Nonce conflicts</h3>
 				<p>Nonce issues can seem quite intimidating, but the impact is actually very straightforward. Every transaction from a wallet must be processed in order. If one of the earlier transactions is still pending, then the subsequent transactions can get blocked behind it. They can all get stuck until that first transaction has cleared.</p>
 				<p>Support agents don’t need to turn every interaction into a blockchain lesson. Instead, explain:</p>
 				<p><em>An earlier transaction from your wallet is still awaiting confirmation, and this is what is preventing the new transactions from going through.</em></p>
 				<p>That’s usually all the user needs to know.</p>
 
-				<h3>4. Wallet Synchronization Issues</h3>
+				<h3>4. Wallet synchronization issues</h3>
 				<p>At times, the blockchain is working perfectly; the wallet just won’t update in the interface.</p>
 				<p>Users may see:</p>
 				<ul>
@@ -109,7 +109,7 @@
 				</ul>
 				<p>A transaction that looks stuck may in fact already be confirmed on-chain. That’s why the support team should always check a blockchain explorer before concluding that a transaction is still pending.</p>
 
-				<h3>5. Smart Contract Failures</h3>
+				<h3>5. Smart contract failures</h3>
 				<p>Not every transaction fails due to the network. The transaction may reach the blockchain successfully, only to then hit a problem at the contract level.</p>
 				<p>Common examples include:</p>
 				<ul>
@@ -120,7 +120,7 @@
 				</ul>
 				<p>The distinction is important. A pending transaction is not the same as a failed transaction, and that needs to be made clear to avoid people unnecessarily worrying.</p>
 
-				<h2>Walking a User Through a Pending Transaction</h2>
+				<h2>Walking a user through a pending transaction</h2>
 				<p>The vast majority of “stuck” transactions are simply pending with a gas price that the network no longer accepts. The process is always the same:</p>
 				<ol>
 					<li><strong>Look up the transaction hash.</strong> We check the explorer ourselves first, so the user never has to interpret a block explorer on their own.</li>
@@ -129,19 +129,19 @@
 					<li><strong>Confirm the outcome.</strong> We stay with the user until the transaction confirms (or the replacement clears) and they can see it themselves in the explorer.</li>
 				</ol>
 
-				<h2>Nonce Issues, in Plain Language</h2>
+				<h2>Nonce issues, in plain language</h2>
 				<p>Nonce problems may sound scary, but the explanation is simple: every transaction that comes out of your wallet has a number, and the network processes those numbers in order. If one number is missing, then everything after it just sits there.</p>
 				<p>Once you get your head around it, the solution makes perfect sense. You either send the missing transaction or you replace the stuck one with the same number. We never ask a user to “clear the nonce” or “reset the wallet” without first explaining what will happen to their pending funds.</p>
 
-				<h2>Gas Selection Without the Jargon</h2>
+				<h2>Gas selection without the jargon</h2>
 				<p>Most stuck transactions start with a gas estimate that was simply too low when the transaction was submitted. Rather than going into a long-winded explanation about gas markets, we give users one working rule: if the transaction is important, use the wallet’s own “high” or “fast” setting and check the current network cost before you submit.</p>
 				<p>If a user is on a wallet whose estimates keep failing, we say so and suggest they switch for that transaction. It’s far better to be honest about the limitations of the tooling and say “this wallet won’t work for this” than to pretend every wallet is the same.</p>
 
-				<h2>When to Escalate</h2>
+				<h2>When to escalate</h2>
 				<p>A small number of cases are actually broken, such as a bridge that took the funds or a contract that unexpectedly reverted. Those go to support, then to engineering, with the information they need. The user gets a clear expectation of what happens next and when they’ll hear from us.</p>
 				<p>If you handle it that way, a stuck transaction stops being a support emergency. It becomes the moment the user realizes you can be trusted with their money.</p>
 
-				<h2>Why a Support Playbook Matters</h2>
+				<h2>Why a support playbook matters</h2>
 				<p>Without a consistent process, transaction-related support becomes chaotic. Different agents may provide different explanations. Users receive conflicting advice. Simple situations escalate to engineering unnecessarily.</p>
 				<p>A support playbook creates consistency by defining:</p>
 				<ul>
@@ -152,7 +152,7 @@
 				</ul>
 				<p>It ensures users get accurate guidance while reducing engineers’ workload.</p>
 
-				<h2>The Human Side of Blockchain Support</h2>
+				<h2>The human side of blockchain support</h2>
 				<p>Blockchain transactions can be complicated. Support conversations don’t have to be. Stuck transactions are just part of the crypto experience. Users won’t remember the delay itself; they’ll remember how you explain it and how you handle it.</p>
 				<p>The best support teams won’t just throw around blockchain jargon and complex theory. They’ll give clarity, reassurance, and practical advice so users understand what’s going on and what they need to do.</p>
 				<p>Because when a transaction is stuck, users aren’t looking for a lesson in blockchain mechanics. They want someone who understands the problem and knows how to fix it.</p>
