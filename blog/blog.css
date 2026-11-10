@@ -121,13 +121,17 @@
 .article h3 { margin-top: 2.25rem; font-size: 1.3rem; font-weight: 600; border-left: 4px solid var(--primary); padding-left:.8rem; margin-top:1.8rem; color: var(--strong); }
 .article a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .article blockquote {
-	padding: 1.25rem 1.5rem;
-	border-left: 3px solid var(--accent);
-	border-radius: 0 1rem 1rem 0;
-	background: var(--surface);
-	font-size: 1.2rem;
-	font-style: italic;
-	color: var(--strong);
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--primary); /* clean teal accent */
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: color-mix(in oklch, var(--foreground) 4%, var(--background)); /* soft slate tint */
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 1.65;
+  color: var(--strong);
+}
+
 }
 .article code { padding: 0.15rem 0.4rem; border-radius: 0.35rem; background: color-mix(in oklch, var(--border) 60%, transparent); font-size: 0.9em; }
 .article pre { padding: 1.25rem; border-radius: 1rem; background: var(--footer); color: var(--strong-foreground); overflow-x: auto; font-size: 0.9rem; line-height: 1.6; }
