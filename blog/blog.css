@@ -127,7 +127,7 @@
   border-radius: 0 0.75rem 0.75rem 0;
   background: color-mix(in oklch, var(--foreground) 4%, var(--background)); /* soft slate tint */
   font-size: 1.125rem;
-  font-style: normal;
+  font-style: italic;
   line-height: 1.65;
   color: var(--strong);
 }
