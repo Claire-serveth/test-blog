@@ -1,11 +1,4 @@
-/* Blog — builds on styles.css tokens */
-:root {
-  --list-teal: #22c5a2;           /* Accent teal for dots, numbers, checks */
-  --list-teal-light: #e6f9f5;     /* Light badge fill for step numbers */
-  --list-border: #e2e8f0;         /* Card / separator border */
-  --list-bg-card: #ffffff;        /* Card background */
-  --list-text: #1e293b;           /* Text color */
-	
+/* Blog — builds on styles.css tokens */	
 .blog-hero {
 	padding: 1.5rem 1.25rem 4.5rem;
 	color: var(--hero-foreground);
