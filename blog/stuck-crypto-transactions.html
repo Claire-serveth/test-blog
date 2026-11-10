@@ -119,7 +119,7 @@
 				<h2>Walking a user through a pending transaction</h2>
 				<p>The vast majority of “stuck” transactions are simply pending with a gas price that the network no longer accepts. The process is always the same:</p>
 				<ol>
-					<li><strong>Look up the transaction hash.</strong><span>We check the explorer ourselves first, so the user never has to interpret a block explorer on their own.</span></li>
+					<li><strong>Look up the transaction hash.</strong>We check the explorer ourselves first, so the user never has to interpret a block explorer on their own.</li>
 					<li><strong>Classify the state.</strong>Pending, dropped, or replaced. Each has a different fix, and telling the user which one it is removes the guesswork.</li>
 					<li><strong>Speed it up or cancel it.</strong>We walk the user through a same-nonce replacement transaction with higher gas, or a zero-value cancellation, one wallet screen at a time.</li>
 					<li><strong>Confirm the outcome.</strong>We stay with the user until the transaction confirms (or the replacement clears) and they can see it themselves in the explorer.</li>
