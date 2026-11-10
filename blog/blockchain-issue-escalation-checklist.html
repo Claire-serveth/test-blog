@@ -62,7 +62,7 @@
 				<p>In Web3, where transactions may be irreversible and issues can involve wallets, smart contracts, and multiple blockchain networks, collecting the right information from the beginning is essential. A structured support process helps teams identify the problem, rule out common causes, and give technical specialists the context they need to investigate.</p>
 				<p>Here’s what your support team should collect before escalating a blockchain issue.</p>
 
-				<h3>1. A Clear Description of the Problem</h3>
+				<h4>1. A Clear Description of the Problem</h4>
 				<p>Start by understanding what the user was trying to do and what happened instead. Ask the user to describe the issue in their own words. Then clarify the expected result and the actual result. For example:</p>
 				<ul>
 					<li><strong>Expected result:</strong> The user wanted to swap ETH for a token.</li>
@@ -78,7 +78,7 @@
 				</ul>
 				<blockquote>The objective is to establish a clear timeline and understand the user’s intended action before investigating further.</blockquote>
 
-				<h3>2. The Blockchain Network</h3>
+				<h4>2. The Blockchain Network</h4>
 				<p>Always establish which blockchain network the user was using. A transaction on Ethereum mainnet is different from one on Arbitrum, Base, Polygon, or another network. Even when applications support multiple networks, their contracts, balances, and transaction histories may differ.</p>
 				<p>Ask the user to confirm the network selected in their wallet or application. Examples include:</p>
 				<ul>
@@ -90,7 +90,7 @@
 				<p>If the user is unsure, a transaction hash or block explorer link may help identify the network.</p> 
 				<blockquote>This information is especially important when investigating missing tokens, failed transactions, incorrect network selections, and wallet connection issues.</blockquote>
 
-				<h3>3. The Transaction Hash or Relevant Wallet Address</h3>
+				<h4>3. The Transaction Hash or Relevant Wallet Address</h4>
 				<p>For an on-chain transaction, the transaction hash is one of the most useful pieces of information you can collect. A transaction hash allows a support agent or developer to inspect publicly available blockchain data, including the transaction status, block information, and execution result. Ask the user for:</p>
 				<ul>
 					<li>The transaction hash, if a transaction was submitted.</li>
@@ -101,7 +101,7 @@
 				<p>If no transaction hash exists, don’t assume the transaction failed on-chain. The issue may have occurred before broadcast, during wallet signing, or within the application’s interface.</p>
 				<blockquote><strong>Security reminder:</strong> Never ask users for their seed phrase, private key, wallet password, or secret recovery information. Support staff do not need these credentials to investigate a transaction.</blockquote>
 
-				<h3>4. The Exact Error Message</h3>
+				<h4>4. The Exact Error Message</h4>
 				<p>Ask the user to provide the complete error message rather than a paraphrase.</p>
 				<p>For example, “Transaction failed to sign” and “execution reverted” can indicate problems at different stages of the transaction process. The exact wording can help narrow down whether the issue involves:</p>
 				<ul>
@@ -114,7 +114,7 @@
 				<p>Request a screenshot when it helps show where the error appeared.</p> 
 				<blockquote>Screenshots should be checked for sensitive information before being shared with other teams. If the issue occurs without an error message, record that too.</blockquote>
 
-				<h3>5. The Wallet and Application Details</h3>
+				<h4>5. The Wallet and Application Details</h4>
 				<p>Record which wallet and application the user was using. Relevant details may include:</p>
 				<ul>
 					<li>Wallet name, such as MetaMask, Trust Wallet, or another supported wallet.</li>
@@ -126,7 +126,7 @@
 					<p>These details help developers determine whether the issue may be specific to a wallet, device, connection method, or application integration.</p>
 					<blockquote>Do not ask for unnecessary personal information. Collect only the technical details needed to investigate the issue.</blockquote>
 
-				<h3>6. The Steps That Reproduced the Issue</h3>
+				<h4>6. The Steps That Reproduced the Issue</h4>
 				<p>A developer needs to understand how the problem occurred, not just the final error. Ask the user to describe the steps leading up to the issue in chronological order. For example:</p>
 				<ol>
 					<li>Opened the decentralized application.</li>
@@ -139,11 +139,11 @@
 				<p>If the problem is reproducible, document the conditions under which it happens. Also record whether the user has already tried troubleshooting steps, such as reconnecting the wallet or refreshing the page.</p> 
 				<blockquote>This prevents support teams from repeatedly suggesting the same actions without new evidence.</blockquote>
 
-				<h3>7. The Approximate Time of the Incident</h3>
+				<h4>7. The Approximate Time of the Incident</h4>
 				<p>Record the date and time when the issue occurred, including the time zone if possible. Timestamps help developers correlate a user report with application logs, RPC provider errors, monitoring alerts, and blockchain activity.</p>
 				<p>For recurring problems, record whether the issue happens consistently or only intermittently. If multiple users report the same problem around the same time, the information may help identify a broader service incident rather than an isolated user issue.</p>
 
-				<h3>8. What Has Already Been Checked?</h3>
+				<h4>8. What Has Already Been Checked?</h4>
 				<p>Before escalating, document the checks already completed and their results. Depending on the issue, these may include:</p>
 				<ul class="checklist">
 					<li>Confirming the selected network.</li>
@@ -156,7 +156,7 @@
 				<p>Do not ask users to repeat risky transactions or spend additional funds merely to reproduce an error. Any further testing should follow the application’s approved troubleshooting process.</p> 
 				<blockquote>A good escalation includes both what the team found and what remains unknown.</blockquote>
 
-				<h3>9. A Clear Impact and Priority Assessment</h3>
+				<h4>9. A Clear Impact and Priority Assessment</h4>
 				<p>Not every blockchain issue requires the same escalation path. Determine whether the problem affects one user or many, whether a core application function is unavailable, and whether there are credible signs of an active security incident. For example:</p>
 				<ul>
 					<li>One user cannot connect a wallet.</li>
@@ -171,7 +171,7 @@
 						<li>Blockchain outcomes depend on the specific circumstances and protocol.</li>
 					</ul>
 
-				<h3>10. A Concise Escalation Summary</h3>
+				<h4>10. A Concise Escalation Summary</h4>
 				<p>Once the necessary information has been collected, summarize the issue in a format that the technical team can act on. A useful escalation should explain:</p>
 				<ul>
 					<li>What the user was trying to do.</li>
