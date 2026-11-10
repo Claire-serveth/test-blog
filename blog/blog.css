@@ -258,7 +258,6 @@
   margin: 0.75rem 0;
 }
 
-
 /* 2. Numbered Process Step Cards (Applies automatically to all <ol>) */
 .article ol {
   list-style: none;
@@ -272,11 +271,9 @@
 
 .article ol > li {
   counter-increment: article-step;
-  display: grid;
-  grid-template-columns: 2.25rem minmax(0, 1fr);
-  gap: 1rem;
-  align-items: start;
-  padding: 1rem 1.15rem;
+  position: relative;
+  display: block;
+  padding: 1.1rem 1.25rem 1.1rem 4.25rem; /* leaves room for the number badge */
   border: 1px solid var(--border);
   border-radius: 0.75rem;
   background-color: var(--surface);
@@ -290,6 +287,9 @@
 
 .article ol > li::before {
   content: counter(article-step, decimal-leading-zero);
+  position: absolute;
+  top: 1.1rem;
+  left: 1.15rem;
   display: grid;
   place-items: center;
   width: 2.25rem;
@@ -302,6 +302,10 @@
   line-height: 1;
 }
 
+.article ol > li > strong:first-child {
+  display: inline;
+  margin-right: 0.35rem;
+}
 
 /* 3. Grouped Checklist Box (Applies to <ul class="checklist">) */
 .article ul.checklist {
