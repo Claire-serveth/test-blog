@@ -1,4 +1,4 @@
-/* Blog — builds on styles.css tokens */	
+/* Blog — builds on styles.css tokens */
 .blog-hero {
 	padding: 1.5rem 1.25rem 4.5rem;
 	color: var(--hero-foreground);
@@ -121,15 +121,15 @@
 .article h3 { margin-top: 2.25rem; font-size: 1.3rem; font-weight: 600; border-left: 4px solid var(--primary); padding-left:.8rem; margin-top:1.8rem; color: var(--strong); }
 .article a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .article blockquote {
-  margin: 2rem 0;
-  padding: 1.25rem 1.5rem;
-  border-left: 3px solid var(--primary); /* clean teal accent */
-  border-radius: 0 0.75rem 0.75rem 0;
-  background: color-mix(in oklch, var(--foreground) 4%, var(--background)); /* soft slate tint */
-  font-size: 1.125rem;
-  font-style: italic;
-  line-height: 1.65;
-  color: var(--strong);
+	margin: 2rem 0;
+	padding: 1.25rem 1.5rem;
+	border-left: 3px solid var(--primary); /* clean teal accent */
+	border-radius: 0 0.75rem 0.75rem 0;
+	background: color-mix(in oklch, var(--foreground) 4%, var(--background)); /* soft slate tint */
+	font-size: 1.125rem;
+	font-style: italic;
+	line-height: 1.65;
+	color: var(--strong);
 }
 
 .article code { padding: 0.15rem 0.4rem; border-radius: 0.35rem; background: color-mix(in oklch, var(--border) 60%, transparent); font-size: 0.9em; }
@@ -227,123 +227,123 @@
 
 /* 1. Modern Bulleted List (Applies automatically to all standard <ul>) */
 .article ul:not(.checklist) {
-  list-style: none;
-  padding-left: 0;
-  margin: 1.5rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+	list-style: none;
+	padding-left: 0;
+	margin: 1.5rem 0 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
 }
 
 .article ul:not(.checklist) > li {
-  position: relative;
-  padding-left: 1.5rem;
-  line-height: 1.7;
+	position: relative;
+	padding-left: 1.5rem;
+	line-height: 1.7;
 }
 
 .article ul:not(.checklist) > li::before {
-  content: "";
-  position: absolute;
-  top: 0.65em;
-  left: 0.2rem;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--primary);
+	content: "";
+	position: absolute;
+	top: 0.65em;
+	left: 0.2rem;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: var(--primary);
 }
 
 /* Nested lists inside blockquotes or standard lists */
 .article blockquote ul {
-  margin: 0.75rem 0;
+	margin: 0.75rem 0;
 }
 
 /* 2. Numbered Process Step Cards (Applies automatically to all <ol>) */
 .article ol {
-  list-style: none;
-  counter-reset: article-step;
-  padding-left: 0;
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
+	list-style: none;
+	counter-reset: article-step;
+	padding-left: 0;
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
 }
 
 .article ol > li {
-  counter-increment: article-step;
-  position: relative;
-  display: block;
-  padding: 1.1rem 1.25rem 1.1rem 4.25rem; /* leaves room for the number badge */
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  background-color: var(--surface);
-  line-height: 1.7;
-  transition: border-color 150ms ease;
+	counter-increment: article-step;
+	position: relative;
+	display: block;
+	padding: 1.1rem 1.25rem 1.1rem 4.25rem; /* leaves room for the number badge */
+	border: 1px solid var(--border);
+	border-radius: 0.75rem;
+	background-color: var(--surface);
+	line-height: 1.7;
+	transition: border-color 150ms ease;
 }
 
 .article ol > li:hover {
-  border-color: color-mix(in oklch, var(--primary) 40%, var(--border));
+	border-color: color-mix(in oklch, var(--primary) 40%, var(--border));
 }
 
 .article ol > li::before {
-  content: counter(article-step, decimal-leading-zero);
-  position: absolute;
-  top: 1.1rem;
-  left: 1.15rem;
-  display: grid;
-  place-items: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: color-mix(in oklch, var(--primary) 12%, transparent);
-  color: var(--primary);
-  font-size: 0.8rem;
-  font-weight: 700;
-  line-height: 1;
+	content: counter(article-step, decimal-leading-zero);
+	position: absolute;
+	top: 1.1rem;
+	left: 1.15rem;
+	display: grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	background: color-mix(in oklch, var(--primary) 12%, transparent);
+	color: var(--primary);
+	font-size: 0.8rem;
+	font-weight: 700;
+	line-height: 1;
 }
 
 .article ol > li > strong:first-child {
-  display: inline;
-  margin-right: 0.35rem;
+	display: inline;
+	margin-right: 0.35rem;
 }
 
 /* 3. Grouped Checklist Box (Applies to <ul class="checklist">) */
 .article ul.checklist {
-  list-style: none;
-  padding-left: 0;
-  margin: 2rem 0 2.5rem;
-  border: 1px solid var(--border);
-  border-radius: 0.875rem;
-  background-color: var(--surface);
-  overflow: hidden;
-  box-shadow: 0 4px 16px -8px color-mix(in oklch, var(--strong) 15%, transparent);
+	list-style: none;
+	padding-left: 0;
+	margin: 2rem 0 2.5rem;
+	border: 1px solid var(--border);
+	border-radius: 0.875rem;
+	background-color: var(--surface);
+	overflow: hidden;
+	box-shadow: 0 4px 16px -8px color-mix(in oklch, var(--strong) 15%, transparent);
 }
 
 .article ul.checklist > li {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  padding: 1rem 1.25rem;
-  line-height: 1.65;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.85rem;
+	padding: 1rem 1.25rem;
+	line-height: 1.65;
 }
 
 .article ul.checklist > li + li {
-  border-top: 1px solid var(--border);
+	border-top: 1px solid var(--border);
 }
 
 /* Pure CSS checkmark badge (no SVGs or icons needed in HTML) */
 .article ul.checklist > li::before {
-  content: "";
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-top: 0.2rem;
-  border-radius: 0.35rem;
-  background-color: color-mix(in oklch, var(--primary) 15%, transparent);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322c5a2' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
-  background-size: 0.8rem;
-  background-position: center;
-  background-repeat: no-repeat;
+	content: "";
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	margin-top: 0.2rem;
+	border-radius: 0.35rem;
+	background-color: color-mix(in oklch, var(--primary) 15%, transparent);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322c5a2' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+	background-size: 0.8rem;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Comparison table */
