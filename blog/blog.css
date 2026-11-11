@@ -225,7 +225,7 @@
 	border-radius: 1rem;
 }
 
-/* 1. Modern Bulleted List (Applies automatically to all standard <ul>) */
+/* Modern Bulleted List (Applies automatically to all standard <ul>) */
 .article ul:not(.checklist) {
 	list-style: none;
 	padding-left: 0;
@@ -257,7 +257,7 @@
 	margin: 0.75rem 0;
 }
 
-/* 2. Numbered Process Step Cards (Applies automatically to all <ol>) */
+/* Numbered Process Step Cards (Applies automatically to all <ol>) */
 .article ol {
 	list-style: none;
 	counter-reset: article-step;
@@ -306,7 +306,7 @@
 	margin-right: 0.35rem;
 }
 
-/* 3. Grouped Checklist Box (Applies to <ul class="checklist">) */
+/* Grouped Checklist Box (Applies to <ul class="checklist">) */
 .article ul.checklist {
 	list-style: none;
 	padding-left: 0;
