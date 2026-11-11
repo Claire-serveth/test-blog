@@ -132,7 +132,6 @@
   color: var(--strong);
 }
 
-}
 .article code { padding: 0.15rem 0.4rem; border-radius: 0.35rem; background: color-mix(in oklch, var(--border) 60%, transparent); font-size: 0.9em; }
 .article pre { padding: 1.25rem; border-radius: 1rem; background: var(--footer); color: var(--strong-foreground); overflow-x: auto; font-size: 0.9rem; line-height: 1.6; }
 .article pre code { padding: 0; background: none; }
